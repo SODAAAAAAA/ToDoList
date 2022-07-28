@@ -1,0 +1,172 @@
+/*reset css*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*----------------------------------------------*/
+
+body {
+    background: beige;
+}
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+
+.container {
+    max-width: 1260px;
+    width: 100%;
+    min-height: 90vh;
+    margin: 5vh auto;
+    background: #fff;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 10px;
+}
+
+.container>* {
+    width: 100%;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: cadetblue;
+    text-align: center;
+}
+
+.inputArea {
+    text-align: center;
+    margin: 10px auto;
+}
+
+.inputArea input {
+    width: 500px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background:rgba(245, 245, 220, 0.5);
+    text-align: center;
+}
+
+.taskArea {
+    border: 1px solid salmon;
+}
+
+.taskArea ul {
+    display: flex;
+    border-bottom: 1px solid salmon;
+    position: relative;
+}
+
+.taskArea ul li {
+    padding: 1em;
+}
+
+#underLine {
+    height: 4px;
+    width: 65px;
+    background-color: cadetblue;
+    position: absolute;
+    left: 0;
+    top: 45px;
+    padding: 0;
+}
+
+.taskItem {
+    display: flex;
+    justify-content: space-between;
+}
+
+.taskItem > div:first-child {
+    width: 100%;
+    padding: 1em;
+}
+
+.taskItem > div:last-child {
+    display: flex;
+}
+
+.taskItem > div button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 51px;
+    height: 51px;
+}
+
+.taskItem > div button:hover {
+    background: cadetblue;
+    transition: 0.4s;
+}
+
+.taskItem > div button:hover i {
+    color: #fff;
+}
+
+.fa-check {
+    color: #a5f0a2;
+}
+
+.fa-trash {
+    color: #f35978;
+}
+
+.fa-arrow-rotate-right {
+    color: lightblue;
+}
+
+.taskDone {
+    text-decoration: line-through;
+    background: #ececec;
+    color: cadetblue;
+}
+
+@media screen and (max-width: 1280px) {
+	.container {
+        width: 90%;
+    }
+}
